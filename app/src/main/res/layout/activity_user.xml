@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User">
+
+    <TextView
+        android:id="@+id/saludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_centerHorizontal="true"
+        android:text="Es bueno verte otra vez :)"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saludosub"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#3F51B5"
+        android:text="CONTINUAR CON GOOGLE" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google"
+        android:layout_marginHorizontal="32dp"
+        android:backgroundTint="#2196F3"
+        android:text="CONTINUAR CON FACEBOOK" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:text="Al continuar, acepta nuestros Términos de uso y Políticas de privacidad" />
+
+    <TextView
+        android:id="@+id/saludosub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saludo"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Iniciar sesión con su cuenta" />
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="x"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
