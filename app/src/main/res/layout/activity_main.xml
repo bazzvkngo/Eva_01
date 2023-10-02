@@ -83,7 +83,7 @@
         android:fontFamily="@font/roboto"
         android:insetTop="80dp"
         android:text="COMENZAR"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -98,7 +98,7 @@
         android:fontFamily="@font/roboto"
         android:text="YA TENGO UNA CUENTA"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />

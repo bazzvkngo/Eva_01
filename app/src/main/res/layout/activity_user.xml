@@ -23,7 +23,9 @@
         android:layout_marginHorizontal="32dp"
         android:layout_marginTop="22dp"
         android:backgroundTint="#3F51B5"
-        android:text="CONTINUAR CON GOOGLE" />
+        android:text="CONTINUAR CON GOOGLE"
+        android:textIsSelectable="false"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/button5"
@@ -32,7 +34,8 @@
         android:layout_below="@id/google"
         android:layout_marginHorizontal="32dp"
         android:backgroundTint="#2196F3"
-        android:text="CONTINUAR CON FACEBOOK" />
+        android:text="CONTINUAR CON FACEBOOK"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView6"

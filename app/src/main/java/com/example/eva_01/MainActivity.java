@@ -13,14 +13,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Obtén una referencia al botón "YA TENGO UNA CUENTA" por su ID
+        Button comenzarButton = findViewById(R.id.button);
+
+        comenzarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NewUser.class);
+                startActivity(intent);
+            }
+        });
+
         Button yaTengoCuentaButton = findViewById(R.id.button2);
 
-        // Agrega un OnClickListener al botón "YA TENGO UNA CUENTA"
         yaTengoCuentaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crea un Intent para iniciar la actividad User
                 Intent intent = new Intent(MainActivity.this, User.class);
                 startActivity(intent);
             }
