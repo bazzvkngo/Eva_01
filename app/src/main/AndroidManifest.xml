@@ -28,6 +28,9 @@
             android:name=".Form3"
             android:exported="false" />
         <activity
+            android:name=".Form2"
+            android:exported="false" />
+        <activity
             android:name=".Form"
             android:exported="false" />
         <activity
