@@ -7,12 +7,10 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ProgressBar;
 import android.widget.Spinner;
 
 public class Form extends AppCompatActivity {
 
-    private ProgressBar progressBar;
     private SharedPreferences sharedPreferences;
     private Spinner spinnerEdad;
     private Spinner spinnerPeso;
@@ -23,11 +21,7 @@ public class Form extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
 
-        progressBar = findViewById(R.id.progressForm2);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-        int initialProgress = sharedPreferences.getInt("progress", 0);
-        progressBar.setProgress(initialProgress);
 
         Button siguienteButton = findViewById(R.id.siguienteForm2);
         Button volverButton = findViewById(R.id.volverForm3);
@@ -61,8 +55,6 @@ public class Form extends AppCompatActivity {
 
             Intent intent = new Intent(Form.this, Form2.class);
             startActivity(intent);
-
-            updateProgress(25);
         });
 
         volverButton.setOnClickListener(view -> {
@@ -70,10 +62,5 @@ public class Form extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-    }
-
-    private void updateProgress(int progress) {
-        progressBar.setProgress(progress);
-        sharedPreferences.edit().putInt("progress", progress).apply();
     }
 }
