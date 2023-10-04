@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -30,8 +29,8 @@ public class Form extends AppCompatActivity {
         int initialProgress = sharedPreferences.getInt("progress", 0);
         progressBar.setProgress(initialProgress);
 
-        Button siguienteButton = findViewById(R.id.siguienteForm);
-        Button volverButton = findViewById(R.id.volverForm);
+        Button siguienteButton = findViewById(R.id.siguienteForm2);
+        Button volverButton = findViewById(R.id.volverForm3);
 
         spinnerEdad = findViewById(R.id.spinnerEdad);
         ArrayAdapter<CharSequence> edadAdapter = ArrayAdapter.createFromResource(this,

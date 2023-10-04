@@ -8,7 +8,7 @@
     >
 
     <Button
-        android:id="@+id/volverForm"
+        android:id="@+id/volverForm3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -26,10 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:max="100"
-        android:progress="0"
+        android:progress="25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/volverForm" />
+        app:layout_constraintTop_toBottomOf="@+id/volverForm3" />
 
     <TextView
         android:id="@+id/textInformacion"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/progressForm2" />
 
     <Button
-        android:id="@+id/siguienteForm"
+        android:id="@+id/siguienteForm2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"

@@ -1,13 +1,13 @@
 package com.example.eva_01;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.widget.Button;
-import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class Form2 extends AppCompatActivity {
@@ -33,12 +33,23 @@ public class Form2 extends AppCompatActivity {
         textDatoEdad.setText(edad);
         textDatoPeso.setText(peso);
 
-        ProgressBar progressBarForm2 = findViewById(R.id.progressForm2);
-        progressBarForm2.setProgress(50);
-
-        Button botonVolver = findViewById(R.id.volverForm);
+        Button botonVolver = findViewById(R.id.volverForm3);
         botonVolver.setOnClickListener(view -> {
             Intent intent = new Intent(Form2.this, Form.class);
+            startActivity(intent);
+        });
+
+        Button botonSiguiente = findViewById(R.id.siguienteForm2);
+        botonSiguiente.setOnClickListener(view -> {
+            RadioGroup radioGroup = findViewById(R.id.radioGroupObjetivo);
+            int radioButtonId = radioGroup.getCheckedRadioButtonId();
+            RadioButton radioButtonSeleccionado = findViewById(radioButtonId);
+
+            String objetivoSeleccionado = radioButtonSeleccionado.getText().toString();
+
+            sharedPreferences.edit().putString("objetivo", objetivoSeleccionado).apply();
+
+            Intent intent = new Intent(Form2.this, Form3.class);
             startActivity(intent);
         });
     }
