@@ -31,6 +31,37 @@
         android:fontFamily="@font/roboto"
         android:text="Primero, necesitamos saber algunas cosas sobre tí. Rellena los campos para tener una sesión personalizada" />
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Correo electrónico"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese su Email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
@@ -39,4 +70,5 @@
         android:backgroundTint="#3F51B5"
         android:text="SIGUIENTE"
         android:textSize="16sp" />
+
 </LinearLayout>
