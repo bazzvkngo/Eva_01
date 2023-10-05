@@ -28,7 +28,6 @@ public class Form3 extends AppCompatActivity {
         ToggleButton toggleButtonGimnasio = findViewById(R.id.toggleButtonGimnasio);
         TextView textGym = findViewById(R.id.textGym);
 
-        // Configurar un listener para el ToggleButton
         toggleButtonGimnasio.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 textGym.setText("Entrenas en un gym con todo equipado");
@@ -40,6 +39,12 @@ public class Form3 extends AppCompatActivity {
         Button volverButton = findViewById(R.id.volverForm3);
         volverButton.setOnClickListener(view -> {
             Intent intent = new Intent(Form3.this, Form2.class);
+            startActivity(intent);
+        });
+
+        Button siguienteButton = findViewById(R.id.siguienteForm3);
+        siguienteButton.setOnClickListener(view -> {
+            Intent intent = new Intent(Form3.this, Rutine.class);
             startActivity(intent);
         });
     }
