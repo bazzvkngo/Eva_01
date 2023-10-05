@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Form3 extends AppCompatActivity {
@@ -23,6 +24,18 @@ public class Form3 extends AppCompatActivity {
 
         TextView textMiObjetivo = findViewById(R.id.textMiObjetivo);
         textMiObjetivo.setText(objetivoSeleccionado);
+
+        ToggleButton toggleButtonGimnasio = findViewById(R.id.toggleButtonGimnasio);
+        TextView textGym = findViewById(R.id.textGym);
+
+        // Configurar un listener para el ToggleButton
+        toggleButtonGimnasio.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                textGym.setText("Entrenas en un gym con todo equipado");
+            } else {
+                textGym.setText("Entrenas en tu casa o un parque");
+            }
+        });
 
         Button volverButton = findViewById(R.id.volverForm3);
         volverButton.setOnClickListener(view -> {

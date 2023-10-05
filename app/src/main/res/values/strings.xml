@@ -8,12 +8,12 @@
     </string-array>
 
     <string-array name="edades_array">
-        <item>Selecciona la edad</item>
         <item>0-10 años</item>
         <item>11-20 años</item>
         <item>21-30 años</item>
         <item>31-40 años</item>
-        <item>40+ años</item>
+        <item>41-50 años</item>
+        <item>51-60 años</item>
     </string-array>
 
     <string-array name="peso_array">
@@ -77,7 +77,28 @@
         <item>97 kg</item>
         <item>98 kg</item>
         <item>99 kg</item>
-        <item>100 kg</item>
-        <item>100+ kg</item>
+        <item>101 kg</item>
+        <item>102 kg</item>
+        <item>103 kg</item>
+        <item>104 kg</item>
+        <item>105 kg</item>
+        <item>106 kg</item>
+        <item>107 kg</item>
+        <item>108 kg</item>
+        <item>109 kg</item>
+        <item>110 kg</item>
+        <item>111 kg</item>
+        <item>112 kg</item>
+        <item>113 kg</item>
+        <item>114 kg</item>
+        <item>115 kg</item>
+        <item>116 kg</item>
+        <item>117 kg</item>
+        <item>118 kg</item>
+        <item>119 kg</item>
+        <item>120 kg</item>
+
+
+
     </string-array>
 </resources>

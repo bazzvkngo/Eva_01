@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Form2 extends AppCompatActivity {
 
@@ -44,14 +45,18 @@ public class Form2 extends AppCompatActivity {
         botonSiguiente.setOnClickListener(view -> {
             RadioGroup radioGroup = findViewById(R.id.radioGroupObjetivo);
             int radioButtonId = radioGroup.getCheckedRadioButtonId();
-            RadioButton radioButtonSeleccionado = findViewById(radioButtonId);
 
-            String objetivoSeleccionado = radioButtonSeleccionado.getText().toString();
+            if (radioButtonId == -1) {
+                Toast.makeText(Form2.this, "Seleccione un objetivo", Toast.LENGTH_SHORT).show();
+            } else {
+                RadioButton radioButtonSeleccionado = findViewById(radioButtonId);
+                String objetivoSeleccionado = radioButtonSeleccionado.getText().toString();
 
-            sharedPreferences.edit().putString("objetivo", objetivoSeleccionado).apply();
+                sharedPreferences.edit().putString("objetivo", objetivoSeleccionado).apply();
 
-            Intent intent = new Intent(Form2.this, Form3.class);
-            startActivity(intent);
+                Intent intent = new Intent(Form2.this, Form3.class);
+                startActivity(intent);
+            }
         });
     }
 }
